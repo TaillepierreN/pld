@@ -1,7 +1,7 @@
 import random
 import ctypes
 
-cops = ctypes.CDLL('./101-operations.dll')
+cops = ctypes.CDLL('./101-operations.so')
 a = random.randint(-111, 111)
 b = random.randint(-111, 111)
 print("{} + {} = {}".format(a, b, cops.add(a, b)))
